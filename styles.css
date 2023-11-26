@@ -1,0 +1,601 @@
+
+body{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #ece7d8;
+  background-image: url(media/ADA\ campus.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+
+#blur{
+  font-size: 30px;
+  animation: fadeInAndOut 4s;
+}
+@keyframes fadeInAndOut {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% {opacity: 0;}
+}
+
+
+
+
+#head{
+  margin-left: 46.5%;
+  background-color: #F4F4F4;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 25px;
+  box-shadow: 1px 1px 10px black;
+  
+}
+#name_1,
+#name_3{
+  color: #336178;
+  
+}
+
+#name_2{
+  color: #ae485e;
+}
+
+
+
+
+
+
+#banner {
+  box-shadow: 1px 1px 20px black;
+  display: inline-block;
+  height: 150px;
+  background-color: #ece7d8 ;
+  font-size: x-large;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;  
+  z-index: 1;
+  justify-content: center;
+
+}
+
+#blur {
+  
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(236, 231, 216, 0.8);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition:all 1s ease;
+  z-index: 2;
+}
+
+#logo{
+  margin-right: 1.3%;
+  margin-bottom: -1%;
+  margin-top: 30px;
+
+}
+
+#logo:hover{
+
+  cursor: pointer;
+  border-radius: 100px;
+  transform: scale(1.05);
+  transition:all 1s ease;
+  
+
+}
+
+
+#banner li {
+  display: inline-block; 
+  margin-right: 45px;
+  margin: 10px 0px;
+  text-align: center;
+    
+}
+
+#banner a:hover{
+  color: #F45050;
+  text-decoration-line: underline;
+}
+
+
+#banner a {
+  text-decoration: none;
+  color: #333; 
+}
+h2,
+p, h3{
+  padding: 20px;
+  padding-top: 0;
+  margin-bottom: -25px;
+}
+
+a:hover{
+  color:#F45050;
+
+}
+a{
+  color: #28848c;
+}
+
+
+#head{
+  text-align: center;
+}
+#members li:nth-child(even) a {
+    color: #28848c;
+}
+#members li:nth-child(odd) a {
+    color: #28848c;
+}
+#members li a:hover{
+    color:#F45050;
+}
+
+
+#video{
+  border-radius: 15px;
+  margin-left: 300px;
+  margin-top: -150px;
+}
+
+
+.card_1:hover,
+.card_3:hover{
+  color: white;
+  background-color: #336178;
+  cursor: pointer;
+  transform: scale(1.01);
+  transition:all 1s ease;
+ 
+
+}
+
+
+.card_1:hover ~ #img_1,
+.card_2:hover ~ #img_2,
+.card_3:hover ~ #f_video,
+
+
+
+
+.card_2:hover,
+.card_4:hover{
+  color: white;
+  background-color: #ae485e;
+  cursor: pointer;
+  transform: scale(1.01);
+  transition:all 1s ease; 
+  
+}
+
+.card_4:hover #name_2,
+.card_4:hover #name_1,
+.card_4:hover #name_3 {
+  color: white;
+}
+
+.card_1:hover a,
+.card_2:hover a,
+.card_3:hover a,
+.card_4:hover a{
+  color: #9ED2BE;
+  z-index: 2;
+}
+
+
+a:hover{
+  color: #E25E3E;
+}
+
+
+
+.card_1{
+  box-shadow: 3px 3px 15px black;
+  border-style: double;
+  border-color: #C7B198;
+  background-color: #E6D5B8;
+  font-size: 18px;
+  margin: 15px;
+  padding: 3%; 
+  border-radius: 20px;
+  margin-right: 40%;
+}
+
+
+
+
+
+
+.card_2{
+  box-shadow: 3px 3px 15px black;
+  border-style: double;
+  border-color: #E25E3E;
+  background-color: #FFAE6D;
+  font-size: 18px;
+  margin: 15px;
+  padding: 3%;
+  border-radius: 20px;
+  margin-left: 46.5%;
+  margin-bottom: -0.5%;
+  
+}
+
+.card_3{
+  box-shadow: 3px 3px 15px black;
+  border-style: double;
+  border-color: #7FA998;
+  background-color: #C1CFC0;
+  font-size: 18px;
+  margin: 15px;
+  padding: 3%;
+  border-radius: 20px;
+  margin-right: 40%;
+  margin-top: 1.5%;
+ 
+  
+}
+.card_3 a{
+  text-decoration: none;
+}
+
+.card_4{
+  box-shadow: 3px 3px 15px black;
+  border-style: double;
+  border-color: #F4F4F4;
+  background-color: #E2DED3;
+  font-size: 18px;
+  margin: 15px;
+  padding: 3%;
+  border-radius: 20px;
+  margin-left: 40%;
+  
+}
+
+
+.card{
+  box-shadow: 3px 3px 15px black;
+  font-size: 18px;
+  background-color: #E6D5B8;
+  border-style: double;
+  border-color: #F4F4F4;
+  padding: 3%;
+  margin: 25px;
+  border-radius: 25px;
+}
+
+.card:hover{
+  color: white;
+  background-color: #ae485e;
+  cursor: pointer;
+  transform: scale(1.01);
+  transition:all 1s ease;
+  
+}
+
+#instructor{
+  margin-left: 15%;
+}
+
+footer{
+  border-top-left-radius: 50px;  
+  border-top-right-radius: 50px;
+  margin-top: 15px;
+  box-shadow: 3px 3px 15px black;
+  background-color: #ece7d8;
+  background-image: url(media/green.png);
+  background-position: center;
+  background-size: 100%;
+  background-blend-mode: multiply; /*why doesn't work? */
+  font-size: x-large;
+  background-position: sticky;
+  width: 100%;
+  height: 310px;
+  
+}
+
+.social_media{
+  position: absolute;
+  margin-left:90%;
+
+}
+
+
+#logo_footer{
+  margin-bottom: -90px;
+  margin-left: 36%;
+}
+
+#logo_footer:hover{
+  cursor: pointer;
+  border-radius: 100px;
+  transform: scale(1.05);
+  transition:all 1s ease;
+}
+
+
+.logo{
+  margin-top: 50px;
+  margin-bottom: -50px;
+  margin-left: 38px;
+}
+
+.head{
+  margin-top:70px;
+  margin-bottom: -60px;
+  margin-left: 15px;
+  color: #F4F4F4;
+  
+}
+.first{
+  font-size: medium;
+  margin-top: 50px;
+  margin-left: 15px;
+  color: #F4F4F4;
+}
+
+.second{
+  font-size: medium;
+  margin-top: 10px;
+  margin-left: 15px;
+  color: #F4F4F4;
+}
+
+.tel1,
+.tel2{
+  color: #F4F4F4;
+  font-size: 13px;
+  text-align: center;
+  margin-top: -60px;
+  margin-right: 2%;
+}
+
+.tel1{
+  margin-bottom: 45px;
+
+}
+
+.tel2{
+  margin-left: 30px;
+}
+
+#table_head{
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+table{
+  border-radius: 10px 10px;
+  overflow: hidden;
+}
+
+table{
+  
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  border-collapse: collapse;
+  margin: 5%;
+  min-width: 90%;
+  min-height: 150px;
+  font-size: 18px;
+
+}
+
+table thead tr{
+  /* table radius */
+  background-color: #4F6F52;
+  color: #F4F4F4;
+  font-weight: bold;
+  
+}
+table{
+  background-color: #FFAE6D;
+  box-shadow: 2px 2px 20px black;
+  
+}
+
+table th,
+table td{
+  padding: 12px 15px;
+}
+
+table td{
+  border-bottom: 2px solid #B0A695;
+}
+
+table tbody tr:nth-last-of-type(even){
+  background-color: #E6D5B8;
+}
+
+table tbody tr:last-of-type{
+  border-bottom: 2px solid #B0A695;
+}
+
+
+table:hover{
+  transform: scale(1.03);
+  transition:all 1s ease;
+  
+}
+
+#table_web{
+  margin-top: 30px;
+}
+
+#web_card{
+  margin-top: -30px;
+  margin-bottom: 50px;
+}
+
+#toghrul{
+  margin-left: 1.7%;
+  min-width: 88%;
+  padding-bottom: 3%;
+  
+}
+
+#toghrul_img{
+  float: right;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px black;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  
+}
+
+#shamil-container{
+  display: flex;
+}
+
+#shamil{
+  margin-left: 3.7%;
+  width: 88%;
+  margin-bottom: 1%;
+
+}
+
+#shamil_img{
+  float: left;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px black;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+#araz{
+  margin-left: 1.7%;
+  width: 88%;
+  
+}
+
+#araz_img{
+  float: right;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px black;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#laman{
+  margin-left: 3.7%;
+  width: 88%;
+  
+
+}
+
+#laman_img{
+  float: left;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px black;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+
+.text_write{
+  margin-left: 75%;
+  margin-top: -12%;
+  
+}
+
+form input{
+  height: 50px;
+  width: 250px;
+  border-radius: 10px;
+  border: none;
+  text-indent: 10px;
+  box-shadow: 2px 2px 20px black;
+}
+
+form button{
+  margin-top: 2%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #ae485e;
+  box-shadow: 2px 2px 20px black;
+}
+
+.botton:hover{
+  text-align: center;
+  background-color: #336178;
+  cursor: pointer;
+  transform: scale(1.03);
+
+}
+
+#feedback{
+  margin: 1px;
+  margin-bottom: -10px;
+  margin-left: -20px;
+  font-weight: bold;
+  color: white;
+}
+
+#img_1{
+  margin-left: 63%;
+  margin-top: -60%;
+  margin-bottom: 1.70%;
+  border-radius: 25px;
+  box-shadow: 4px 4px 10px black;
+}
+
+
+
+#img_2{
+  margin-left: 11%;
+  margin-top: -60%;
+  margin-bottom: 3.2%;
+  border-radius: 25px;
+  box-shadow: 4px 4px 10px black;
+}
+#f_video{
+  margin-left: 63%;
+  margin-top: -60%;
+  margin-bottom: 3%;
+  border-radius: 25px;
+  box-shadow: 4px 4px 10px black;
+}
+
+/* this is a comment*/
+/* automatic dark mode, css for mobile*/
+
+/*@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgba(32,33,35);
+        color: white;
+    }
+    .header{
+
+        border-bottom: 1px solid white;
+    }
+    table, th, td {
+      border: 1px solid white;
+    }
+    input{
+        background-color: rgba(45,46,48);
+        color: white;
+    }
+    #code_cards{
+      background-color:  rgba(32,33,35);
+    }
+}
+*/
